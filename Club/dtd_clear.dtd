@@ -1,0 +1,23 @@
+<!ELEMENT base (clients+, computers*, rents+)>
+
+<!ELEMENT clients (client*)>
+<!ELEMENT client (fullname, passport, rented_computer, rented_date_and_time)>
+<!ELEMENT fullname (#PCDATA)>
+<!ELEMENT passport (#PCDATA)>
+<!ELEMENT rented_computer (#PCDATA)>
+<!ELEMENT rented_date_and_time (#PCDATA)>
+
+<!ELEMENT computers (computer+)>
+<!ELEMENT computer (number, gpu, cpu)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT gpu (#PCDATA)>
+<!ELEMENT cpu (#PCDATA)>
+
+<!ELEMENT rents (rent*)>
+<!ELEMENT rent (client_id, computer_id, time)>
+<!ELEMENT client_id (#PCDATA)>
+<!ELEMENT computer_id (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+
+<!ATTLIST client id ID #REQUIRED>
+<!ATTLIST computer id ID #REQUIRED>

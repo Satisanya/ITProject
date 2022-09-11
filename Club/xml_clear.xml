@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "dtd_clear.dtd">
+<?xml-stylesheet type="text/xsl" href="xsl_clear.xsl"?>
+<base>
+    <clients>
+        <client id="cl1">
+            <fullname> Качаев Борис Фаридович </fullname>
+            <passport> 1232 13131231 </passport>
+            <rented_computer> 1 </rented_computer>
+            <rented_date_and_time> 08.06.2022 с 12-00 до 20-00 </rented_date_and_time>
+        </client>
+        <client id="cl2">
+            <fullname> Алексеев Иван Адольфович </fullname>
+            <passport> 3566 25434525 </passport>
+            <rented_computer> 2 </rented_computer>
+            <rented_date_and_time> 10.06.2022 с 7-00 до 12-00 </rented_date_and_time>
+        </client>
+    </clients>
+    <computers>
+        <computer id="comp01">
+            <number> 1 </number>
+            <gpu> Видеокарта: GeForce GTX 1060 </gpu>
+            <cpu> Процессор: i7-6700K </cpu>
+        </computer>
+        <computer id="comp02">
+            <number> 2 </number>
+            <gpu> Видеокарта: GeForce GTX 3060 </gpu>
+            <cpu> Процессор: i7-6700 </cpu>
+        </computer>
+    </computers>
+    <rents>
+        <rent>
+            <client_id> </client_id>
+            <computer_id> </computer_id>
+            <time></time>
+        </rent>
+    </rents>
+</base>
